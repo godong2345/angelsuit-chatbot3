@@ -89,6 +89,14 @@
             font-size: 1.2rem;
         }
         
+        .avatar-icon {
+            max-width: 25px;
+            max-height: 25px;
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+        }
+        
         .user-message .message-avatar {
             background-color: #555;
         }
@@ -274,6 +282,13 @@
                 width: 30px;
                 height: 30px;
                 margin-right: 0.5rem;
+            }
+            
+            .avatar-icon {
+                max-width: 20px !important;
+                max-height: 20px !important;
+                width: 20px !important;
+                height: 20px !important;
             }
             
             .user-message .message-avatar {
@@ -560,7 +575,7 @@
             
             messageDiv.innerHTML = `
                 <div class="message-avatar">
-                    ${isAI ? '<img src="images/icons/symbol.svg" alt="AI" width="25" height="25" style="max-width: 25px; max-height: 25px;">' : '<span class="material-icons">person</span>'}
+                    ${isAI ? '<img src="images/icons/symbol.svg" alt="AI" width="25" height="25" class="avatar-icon">' : '<span class="material-icons">person</span>'}
                 </div>
                 <div class="message-content">
                     <div class="message-header">
